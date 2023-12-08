@@ -12,8 +12,8 @@ public class TPSTarget : TargetRules
 
     public TPSTarget(TargetInfo Target) : base(Target)
     {
-        // Console.WriteLine("TPS game target ---------------->");
-        // Console.WriteLine("TPSTarget UnoptimizedCode ----------------> {0}", UnoptimizedCode);
+        Console.WriteLine("TPS game target ---------------->");
+        Console.WriteLine("TPSTarget UnoptimizedCode ----------------> {0}", UnoptimizedCode);
         if (UnoptimizedCode)
         {
             ProjectDefinitions.Add("UNOPTIMIZED_CODE");
