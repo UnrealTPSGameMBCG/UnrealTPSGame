@@ -1,10 +1,12 @@
 .vs
+.github
 *.sln
+Binaries/
+Build/
+BuildFromBat/
 DerivedDataCache/
 Intermediate/
 Saved/
-Binaries/
-Build/
 devops/tests/data
 devops/jenkins/
 Documentation/
