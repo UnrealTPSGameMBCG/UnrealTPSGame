@@ -5,6 +5,7 @@
 #pragma warning(disable : 4668)
 #if MY_VR_MACRO
 // #include "HeadMountedDisplayFunctionLibrary.h"
+// to make compatible with UE5.3
 #include "HeadMountedDisplay.h"
 #endif
 
@@ -96,8 +97,8 @@ void ATPSCharacter::OnResetVR()
 // or:
 //		Comment or delete the call to ResetOrientationAndPosition below (appropriate if not supporting VR)
 #if MY_VR_MACRO
-// COP: mike: I could not find how to call ResetOrientationAndPosition() in UE5.3 
-//UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
+// COP: mike: I could not find how to call ResetOrientationAndPosition() in UE5.3
+// UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
 #endif
 }
 
