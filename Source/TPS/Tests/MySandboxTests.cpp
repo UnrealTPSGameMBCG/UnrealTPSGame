@@ -1,5 +1,8 @@
 // My game copyright
 
+// exclude code for testing from Shipping builds
+#if (WITH_DEV_AUTOMATION_TESTS || WITH_PERF_AUTOMATION_TESTS)
+
 #include "Tests/MySandboxTests.h"
 #include "Misc/AutomationTest.h"
 
@@ -36,3 +39,5 @@ MySandboxTests::~MySandboxTests()
 {
 }
 */
+
+#endif  // (WITH_DEV_AUTOMATION_TESTS || WITH_PERF_AUTOMATION_TESTS)
