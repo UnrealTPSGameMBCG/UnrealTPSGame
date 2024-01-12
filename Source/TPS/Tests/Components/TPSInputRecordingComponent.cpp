@@ -31,6 +31,7 @@ void UTPSInputRecordingComponent::BeginPlay()
     check(PlayerInput);
 
     InputData.InitialTransform = GetOwner()->GetActorTransform();
+    // record initial state of a parent character (at the time "zero" when play just starts)
     InputData.Bindings.Add(MakeBindingsData());
 }
 
@@ -46,6 +47,7 @@ void UTPSInputRecordingComponent::TickComponent(float DeltaTime, ELevelTick Tick
     InputData.Bindings.Add(MakeBindingsData());
 }
 
+// fills in master structure (FBindingsData) for a certain time for a parent character to which this component is attached
 FBindingsData UTPSInputRecordingComponent::MakeBindingsData() const
 {
     FBindingsData BindingsData;

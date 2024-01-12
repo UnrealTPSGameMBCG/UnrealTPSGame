@@ -19,6 +19,7 @@ public:
 
 protected:
     virtual void BeginPlay() override;
+    // from ActorComponent
     virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 
     UPROPERTY(EditAnywhere)
