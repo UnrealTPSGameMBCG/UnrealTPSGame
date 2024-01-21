@@ -4,6 +4,8 @@
 #include "Weapon/TPSProjectile.h"
 #include "Components/StaticMeshComponent.h"
 
+DEFINE_LOG_CATEGORY_STATIC(LogATPSTurret, All, All)
+
 ATPSTurret::ATPSTurret()
 {
     PrimaryActorTick.bCanEverTick = false;
@@ -26,6 +28,10 @@ void ATPSTurret::BeginPlay()
 
 void ATPSTurret::OnFire()
 {
+#if WITH_AUTOMATION_TESTS
+    UE_LOG(LogATPSTurret, Display, TEXT("OnFire: AmmoCount = %i, FireFrequency = %f"), AmmoCount, FireFrequency);
+#endif
+
     if (--AmmoCount == 0)
     {
         GetWorldTimerManager().ClearTimer(FireTimerHandle);

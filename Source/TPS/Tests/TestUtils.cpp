@@ -5,6 +5,8 @@
 #include "AutomationBlueprintFunctionLibrary.h"  // add FunctionalTesting to PublicDependencyModuleNames in your .Build.cs file
 #include "BufferVisualizationData.h"
 
+DEFINE_LOG_CATEGORY_STATIC(LogTestUtils, All, All)
+
 namespace TPS
 {
 namespace Test
@@ -25,7 +27,13 @@ UWorld* GetTestGameWorld()
 
 void CallFuncByNameWithParams(UObject* Object, const FString& FuncName, const TArray<FString>& Params)
 {
-    if (!Object) return;
+    if (!Object)
+    {
+#if WITH_AUTOMATION_TESTS
+        UE_LOG(LogTestUtils, Warning, TEXT("CallFuncByNameWithParams failed. Object is null"));
+#endif
+        return;
+    }
 
     // Command pattern: "FunctionName Param1 Param2 Param3"
     FString Command = FuncName;
@@ -34,7 +42,12 @@ void CallFuncByNameWithParams(UObject* Object, const FString& FuncName, const TA
         Command.Append(" ").Append(Param);
     }
     FOutputDeviceNull OutputDeviceNull;
-    Object->CallFunctionByNameWithArguments(*Command, OutputDeviceNull, nullptr, true);
+    if (!Object->CallFunctionByNameWithArguments(*Command, OutputDeviceNull, nullptr, true))
+    {
+#if WITH_AUTOMATION_TESTS
+        UE_LOG(LogTestUtils, Warning, TEXT("CallFuncByNameWithParams failed in CallFunctionByNameWithArguments. *Command = %s"), *Command);
+#endif
+    }
 }
 
 FTPSUntilLatentCommand::FTPSUntilLatentCommand(TFunction<void()> InCallback, TFunction<void()> InTimeoutCallback, float InTimeout)

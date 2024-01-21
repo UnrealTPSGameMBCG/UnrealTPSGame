@@ -44,6 +44,8 @@ T* CreateBlueprint(UWorld* World, const FString& Name, const FTransform& Transfo
     return (World && Blueprint) ? World->SpawnActor<T>(Blueprint->GeneratedClass, Transform) : nullptr;
 }
 
+// when using CreateBlueprintDeferred use `FinishSpawning` or `FinishSpawningActor` to finish the process and run OnBeginPlay for the
+// spawned actor MyActorName->FinishSpawning(MyActorTransform); UGameplayStatics::FinishSpawningActor(MyActorName, MyActorTransform);
 template <typename T>
 T* CreateBlueprintDeferred(UWorld* World, const FString& Name, const FTransform& Transform = FTransform::Identity)
 {
