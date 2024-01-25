@@ -1,17 +1,17 @@
 @echo off
 
 rem Engine params
-set EnginePath_4.26=C:\Epic Games\UE Binary\UE_4.26
+set EnginePath_4.26=C:\Program Files\Epic Games\UE_4.26
 set EnginePath_5.0=C:\Epic Games\UE Binary\UE_5.0
 set EnginePath_5.1_InstalledBuild=c:\Epic Games\UE Source\UE_5\Windows
-set EnginePath_5.3=c:\Program Files\Epic Games\UE_5.3
+set EnginePath_5.3=C:\Program Files\Epic Games\UE_5.3
 
 set UBTRelativePath4=Engine\Binaries\DotNET\UnrealBuildTool.exe
 set UBTRelativePath5=Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe
 set VersionSelector=c:\Program Files (x86)\Epic Games\Launcher\Engine\Binaries\Win64\UnrealVersionSelector.exe
 
 rem Current engine path
-set CurrentEnginePath=%EnginePath_5.0%
+set CurrentEnginePath=%EnginePath_5.3%
 
 rem Editor path (Note: path for UE4: "..\UE4Editor.exe")
 set EditorPath=%CurrentEnginePath%\Engine\Binaries\Win64\UnrealEditor.exe
