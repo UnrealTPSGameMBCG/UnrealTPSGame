@@ -1,0 +1,3384 @@
+{
+	"bindings": [
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.033333402127027512
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.13659060001373291
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.20867820084095001
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.24561759829521179
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.27895098924636841
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.31228440999984741
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.34561780095100403
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.37895119190216064
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.41228461265563965
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.44561800360679626
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.47895151376724243
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.51228487491607666
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.54561841487884521
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.57895177602767944
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.27997201681137085
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -0.48995104432106018
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.61228519678115845
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.20174133777618408
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -0.33623555302619934
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.64561861753463745
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -0.69993001222610474
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.67895209789276123
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.20997901260852814
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -3.2782959938049316
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.71228551864624023
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.54463225603103638
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -6.6911959648132324
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.74561887979507446
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -1.658806324005127
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -7.917029857635498
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.77895230054855347
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -1.0377877950668335
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -5.7078323364257812
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.81228572130203247
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -1.1041001081466675
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -5.4591612815856934
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.8456190824508667
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.83165007829666138
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -4.0070414543151855
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.8789525032043457
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.074830427765846252
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -0.52381306886672974
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.91228592395782471
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -0.20997901260852814
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.94561928510665894
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -0.89796525239944458
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 0.97895270586013794
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.069993004202842712
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": -0.48995104432106018
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.0122860670089722
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.0456194877624512
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.0789529085159302
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.1122863292694092
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.069993004202842712
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.20997901260852814
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.1456197500228882
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.22273203730583191
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.51970809698104858
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.1789530515670776
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.073784396052360535
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.73784393072128296
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.2122864723205566
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.12019485235214233
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.84136402606964111
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.2456198930740356
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.074665851891040802
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.67199265956878662
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.2789533138275146
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.29713743925094604
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.96569669246673584
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.3122867345809937
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.369802325963974
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.88752561807632446
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.3456201553344727
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.29472810029983521
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.81050229072570801
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.3789534568786621
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.36720049381256104
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.73440098762512207
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.4122868776321411
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.53499484062194824
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.95110201835632324
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.4456202983856201
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.27997201681137085
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.34996500611305237
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.4789537191390991
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.13998600840568542
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.5122871398925781
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.13998600840568542
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.41995802521705627
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.5456204414367676
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.1457468569278717
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.43724057078361511
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.5789538621902466
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.21817134320735931
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.87268537282943726
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.6122872829437256
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.29381227493286133
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 1.2340115308761597
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.6456207036972046
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.29316094517707825
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 1.8322559595108032
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.6789541244506836
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0.14628405869007111
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 1.8285509347915649
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.7122875452041626
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.14601361751556396
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 2.4092247486114502
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.7456209659576416
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.65594255924224854
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 3.1339478492736816
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.7789545059204102
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.72767859697341919
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 3.4200892448425293
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.8122879266738892
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -1.2905864715576172
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 3.3437919616699219
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.8456213474273682
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -1.6105396747589111
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 3.9531428813934326
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.8789546489715576
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.87711125612258911
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 4.3124632835388184
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.9122880697250366
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.87583959102630615
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 3.2843985557556152
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.9456214904785156
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.94753962755203247
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 2.4781806468963623
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 1.9789549112319946
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.65515530109405518
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 2.9845964908599854
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.0122883319854736
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 1
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.46880611777305603
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 2.9886388778686523
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.0456218719482422
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.65837466716766357
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 2.5603463649749756
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.0789551734924316
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.14612098038196564
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 4.4566903114318848
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.1122887134552002
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -1.1675788164138794
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 4.8162627220153809
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.1456220149993896
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -1.6765031814575195
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 3.1343319416046143
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.1789555549621582
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -1.1650147438049316
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 2.4756565093994141
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.2122890949249268
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.64413690567016602
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 1.9909687042236328
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.2456223964691162
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.13998600840568542
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.34996500611305237
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.2789559364318848
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.13998600840568542
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.13998600840568542
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.3122892379760742
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.069993004202842712
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.3456227779388428
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.069993004202842712
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.3789563179016113
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.4122896194458008
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": -0.069993004202842712
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.27997201681137085
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.4456229209899902
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.069993004202842712
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.4789564609527588
+		},
+		{
+			"axisValues": [
+				{
+					"name": "MoveForward",
+					"value": 0
+				},
+				{
+					"name": "MoveRight",
+					"value": 0
+				},
+				{
+					"name": "Turn",
+					"value": 0
+				},
+				{
+					"name": "TurnRate",
+					"value": 0
+				},
+				{
+					"name": "LookUp",
+					"value": 0.069993004202842712
+				},
+				{
+					"name": "LookUpRate",
+					"value": 0
+				}
+			],
+			"actionValues": [
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": false
+				},
+				{
+					"name": "Jump",
+					"key": "SpaceBar",
+					"state": true
+				},
+				{
+					"name": "ResetVR",
+					"key": "R",
+					"state": false
+				}
+			],
+			"worldTime": 2.5122900009155273
+		}
+	],
+	"initialTransform":
+	{
+		"rotation":
+		{
+			"x": -0,
+			"y": 0,
+			"z": -0.42261898583365481,
+			"w": 0.90630744938620733
+		},
+		"translation":
+		{
+			"x": -970,
+			"y": 33.55657958984375,
+			"z": 228.41171836853027
+		},
+		"scale3D":
+		{
+			"x": 1,
+			"y": 1,
+			"z": 1
+		}
+	}
+}

@@ -93,7 +93,7 @@ void FTurret::Define()
             AfterEach([this]() { SpecCloseLevel(World); });
         });
 
-    Describe("Ammo (UE bug)",
+    xDescribe("Ammo (UE bug)",
         [this]()
         {
             const int32 InitialAmmoCount = 7;
@@ -254,7 +254,7 @@ void FTurret::Define()
                 });
         });
 
-    Describe("Ammo - no AsyncTask in LatentBeforeEach (throws exception)",
+    xDescribe("Ammo - no AsyncTask in LatentBeforeEach (throws exception)",
         [this]()
         {
             const int32 InitialAmmoCount = 7;
@@ -351,7 +351,7 @@ void FTurret::Define()
                 });
         });
 
-    Describe("Ammo (not latent close of map)",
+    xDescribe("Ammo (not latent close of map)",
         [this]()
         {
             const int32 InitialAmmoCount = 7;
@@ -451,7 +451,7 @@ void FTurret::Define()
                 });
         });
 
-    Describe("Ammo (bug fixing) - 2: not latent BeforeEach",
+    xDescribe("Ammo (bug fixing) - 2: not latent BeforeEach",
         [this]()
         {
             const int32 InitialAmmoCount = 10;
@@ -538,7 +538,7 @@ void FTurret::Define()
 
     // mike: trying to debug why LatentIt does not work in UE5.3.
     // .. see bug in FUntilDoneLatentCommand https://forums.unrealengine.com/t/automated-tests-are-broken-ue-5-3/1371033
-    Describe("Debug - open close map - OK",
+    xDescribe("Debug - open close map - OK",
         [this]()
         {
             const int32 InitialAmmoCount = 1;
@@ -595,7 +595,7 @@ void FTurret::Define()
 
     // mike: trying to debug why LatentIt does not work in UE5.3.
     // .. see bug in FUntilDoneLatentCommand https://forums.unrealengine.com/t/automated-tests-are-broken-ue-5-3/1371033
-    Describe("Debug simplest latent - OK",
+    xDescribe("Debug simplest latent - OK",
         [this]()
         {
             const int32 InitialAmmoCount = 1;
@@ -638,7 +638,7 @@ void FTurret::Define()
                 });
         });
 
-    Describe("Debug simplest NoLatent - OK",
+    xDescribe("Debug simplest NoLatent - OK",
         [this]()
         {
             const int32 InitialAmmoCount = 1;

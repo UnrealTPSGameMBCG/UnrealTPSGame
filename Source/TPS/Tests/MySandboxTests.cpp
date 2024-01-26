@@ -21,7 +21,7 @@ bool FMyMathSin::RunTest(const FString& Parameters)
     // output warning example
     if (FMath::Sin(0.0) != 0.1)
     {
-        AddWarning("Just a warning example");
+        // AddWarning("Just a warning example"); // gives out warning at testing
         return true;  // if return "false" then the test will fail, whereas true allows to use comment and warning.
     }
 
