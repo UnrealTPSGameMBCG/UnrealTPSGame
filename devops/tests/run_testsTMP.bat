@@ -1,4 +1,5 @@
-rem this file is for intermediate checks (lesson 30. Тестирование в Unreal Engine. Публикация локального отчета по тестам. Автоматизация UE: https://www.youtube.com/watch?v=xXF_HEZSs5c)
+rem this file is for intermediate checks 
+rem ..(lesson 30. Тестирование в Unreal Engine. Публикация локального отчета по тестам. Автоматизация UE: https://www.youtube.com/watch?v=xXF_HEZSs5c)
 @echo off
 
 call "%~dp0..\config.bat"

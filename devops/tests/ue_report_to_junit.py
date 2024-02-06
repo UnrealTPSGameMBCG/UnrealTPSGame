@@ -10,7 +10,7 @@ import xml.dom.minidom as miniDom
 #             https://www.ibm.com/docs/en/developer-for-zos/14.1.0?topic=formats-junit-xml-format
 
 # example of usage:
-# ue_report_to_junit.py -ue_report_path=C:\Projects\TPS\Build\Tests\index.json -junit_xml_path=C:\Projects\TPS\Build\Tests\index.xml
+# ue_report_to_junit.py -ue_report_path=c:\JenkinsJobs\TPSGameTests\Build\Tests\index.json -junit_xml_path=c:\JenkinsJobs\TPSGameTests\Build\Tests\index.xml
 
 def main():
     # parse args

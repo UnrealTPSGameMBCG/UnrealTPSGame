@@ -79,6 +79,7 @@ bool FMyMathSqrt::RunTest(const FString& Parameters)
     const SqrtPayloadData SqrtTestPayloadData 
     {  
         //{ -1.0f, 0.0f },
+        //{ 4.0f, 123.0f }, // for error test
         { 0.0f, 0.0f },
         { 1.0f, 1.0f },
         { 4.0f, 2.0f },
