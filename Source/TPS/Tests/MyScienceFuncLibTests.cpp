@@ -15,7 +15,10 @@ IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMyFibonacciLogHasErrors, "TPSGame.MyScience.Fi
     EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter | EAutomationTestFlags::HighPriority);
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMyMathSqrt, "TPSGame.MyMath.Sqrt",
-    EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter | EAutomationTestFlags::LowPriority);
+    // EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter | EAutomationTestFlags::LowPriority); // COP: to test pull
+    // request verification
+    EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter |
+        EAutomationTestFlags::CriticalPriority);  // TMP: to test pull request verification
 
 bool FMyFibonacciSimple::RunTest(const FString& Parameters)
 {
@@ -79,7 +82,7 @@ bool FMyMathSqrt::RunTest(const FString& Parameters)
     const SqrtPayloadData SqrtTestPayloadData 
     {  
         //{ -1.0f, 0.0f },
-        //{ 4.0f, 123.0f }, // for error test
+        { 4.0f, 123.0f }, // to cause error
         { 0.0f, 0.0f },
         { 1.0f, 1.0f },
         { 4.0f, 2.0f },
