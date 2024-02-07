@@ -26,7 +26,7 @@ def main():
     #json_obj = json.loads(json_file.read())
     #print(json_obj)
 
-    # if json file does not exist, then simply скуфеу an empty xml file
+    # if json file does not exist, then simply create an empty xml file
     json_file_open_successful = True
 
     if os.path.exists(args.ue_report_path):
