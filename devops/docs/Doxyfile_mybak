@@ -42,7 +42,7 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "TPS"
+PROJECT_NAME           = TPS
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
@@ -635,7 +635,7 @@ INTERNAL_DOCS          = NO
 # Possible values are: SYSTEM, NO and YES.
 # The default value is: SYSTEM.
 
-CASE_SENSE_NAMES       = SYSTEM
+CASE_SENSE_NAMES       = NO
 
 # If the HIDE_SCOPE_NAMES tag is set to NO then doxygen will show members with
 # their full class and namespace scopes in the documentation. If set to YES, the
@@ -949,7 +949,8 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = Source README.md
+INPUT                  = Source \
+                         README.md
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -992,12 +993,8 @@ INPUT_FILE_ENCODING    =
 FILE_PATTERNS          = *.c \
                          *.cc \
                          *.cxx \
-                         *.cxxm \
                          *.cpp \
-                         *.cppm \
-                         *.ccm \
                          *.c++ \
-                         *.c++m \
                          *.java \
                          *.ii \
                          *.ixx \
@@ -1012,7 +1009,6 @@ FILE_PATTERNS          = *.c \
                          *.hxx \
                          *.hpp \
                          *.h++ \
-                         *.ixx \
                          *.l \
                          *.cs \
                          *.d \
@@ -1130,7 +1126,7 @@ IMAGE_PATH             =
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by doxygen.
 
-INPUT_FILTER           = devops\docs\ue_doxygen_source_filter\filter_ue4_macros.py
+INPUT_FILTER           = "py devops\docs\Unreal-Engine-Doxygen-Filter\filter_ue4_macros.py"
 
 # The FILTER_PATTERNS tag can be used to specify filters on a per file pattern
 # basis. Doxygen will compare the file name with each pattern and apply the
@@ -1375,7 +1371,7 @@ HTML_HEADER            =
 # that doxygen normally uses.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_FOOTER            = devops\docs\doxygen-dark-theme\html_footer.html
+HTML_FOOTER            = devops/docs/Doxygen-Dark-Theme/html_footer.html
 
 # The HTML_STYLESHEET tag can be used to specify a user-defined cascading style
 # sheet that is used by each HTML page. It can be used to fine-tune the look of
@@ -1405,7 +1401,7 @@ HTML_STYLESHEET        =
 # documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_STYLESHEET  = devops\docs\doxygen_theme_flat_design\src\doxygen-style.css	
+HTML_EXTRA_STYLESHEET  = devops/docs/Doxygen-Flat-Theme/src/doxygen-style.css
 
 # The HTML_EXTRA_FILES tag can be used to specify one or more extra images or
 # other source files which should be copied to the HTML output directory. Note
@@ -1415,12 +1411,11 @@ HTML_EXTRA_STYLESHEET  = devops\docs\doxygen_theme_flat_design\src\doxygen-style
 # files will be copied as-is; there are no commands or markers available.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_FILES       = devops\docs\doxygen_theme_flat_design\src\img\closed-folder.png \
-devops\docs\doxygen_theme_flat_design\src\img\document.png \
-devops\docs\doxygen_theme_flat_design\src\img\off_sync.png \
-devops\docs\doxygen_theme_flat_design\src\img\on_sync.png \
-devops\docs\doxygen_theme_flat_design\src\img\opened-folder.png
-
+HTML_EXTRA_FILES       = devops/docs/Doxygen-Flat-Theme/src/img/closed-folder.png \
+                         devops/docs/Doxygen-Flat-Theme/src/img/document.png \
+                         devops/docs/Doxygen-Flat-Theme/src/img/opened-folder.png \
+                         devops/docs/Doxygen-Flat-Theme/src/img/off_sync.png \
+                         devops/docs/Doxygen-Flat-Theme/src/img/on_sync.png
 
 # The HTML_COLORSTYLE tag can be used to specify if the generated HTML output
 # should be rendered with a dark or light theme.
@@ -1841,7 +1836,7 @@ FORMULA_MACROFILE      =
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-USE_MATHJAX            = NO
+USE_MATHJAX            = YES
 
 # With MATHJAX_VERSION it is possible to specify the MathJax version to be used.
 # Note that the different versions of MathJax have different requirements with

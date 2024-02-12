@@ -7,3 +7,12 @@
 [submodule "devops/docs/Unreal-Engine-Doxygen-Filter"]
 	path = devops/docs/Unreal-Engine-Doxygen-Filter
 	url = https://github.com/life-exe/Unreal-Engine-Doxygen-Filter.git
+[submodule "devops/docs/doxygen_theme_flat_design"]
+	path = devops/docs/doxygen_theme_flat_design
+	url = https://github.com/MichaelBCG/doxygen_theme_flat_design.git
+[submodule "devops/docs/doxygen-dark-theme"]
+	path = devops/docs/doxygen-dark-theme
+	url = https://github.com/MichaelBCG/doxygen-dark-theme.git
+[submodule "devops/docs/ue_doxygen_source_filter"]
+	path = devops/docs/ue_doxygen_source_filter
+	url = https://github.com/MichaelBCG/ue_doxygen_source_filter.git
