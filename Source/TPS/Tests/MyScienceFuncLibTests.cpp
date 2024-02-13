@@ -15,7 +15,9 @@ IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMyFibonacciLogHasErrors, "TPSGame.MyScience.Fi
     EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter | EAutomationTestFlags::HighPriority);
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FMyMathSqrt, "TPSGame.MyMath.Sqrt",
-    EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter | EAutomationTestFlags::LowPriority);
+    EAutomationTestFlags::EditorContext | EAutomationTestFlags::ProductFilter |
+        EAutomationTestFlags::CriticalPriority);  ///< I set this CriticalPriority is to ensure that there is at least one Critical to let
+                                                  ///< Jenkins verifier job work properly
 
 bool FMyFibonacciSimple::RunTest(const FString& Parameters)
 {
