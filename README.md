@@ -25,3 +25,6 @@ We are using it for training **CI/CD**, automatization and testing in Unreal Eng
 The course started under UE4, and the engine version was changed in the middle of the course to UE5. But you can easily start with the UE5 version — all code bases will be the same.
 
 The major part of this project is a **devops** folder where all automation scripts are left.
+
+## Debug
+To trigger TPS verifier to test nothing is broken after I added "git submodule update --init --recursive" to TPS verifier
