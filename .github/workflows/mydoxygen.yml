@@ -1,0 +1,92 @@
+## uncomment the branches if you want to run this Workflow on them
+name: My Game Documentation
+on:
+  push:
+    branches: 
+    #- master
+    #- doxyg-workflow
+    - not-existing-branch
+  pull_request:
+    branches: 
+    #- master
+    #- doxyg-workflow
+    - not-existing-branch
+
+## This is for deploy-pages
+permissions:
+  pages: write
+  deployments: write
+  id-token: write
+
+## This is required by Conan
+## .. COP: we are not using Conan on Linux
+#env:
+#  CONAN_REVISIONS_ENABLED: 1
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    ## This is for deploy-pages
+    environment:
+     name: github-pages
+     url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check Installed Software
+        run: whereis git & whereis python & whereis pip & python --version & pip --version
+        
+      ## Cloning our repo
+      - name: Checkout
+        uses: actions/checkout@v4
+        with: 
+          submodules: 'recursive'
+
+      ## Package that we need to install and use Doxygen
+      ## .. COP: we don't need Conan on Linux to install Doxygen
+      #- name: Install Conan
+      #  run: pip install conan
+        
+      ## Installing Doxygne on Windows
+      ## .. COP: we are using Linux
+      #- name: Install Doxygen
+      #  run: conan download doxygen/1.9.4@#2af713e135f12722e3536808017ba086:e94378795f92fbf88bb8cef7f9c2f38c4ecf9126 --remote conancenter
+
+      ## Installing Doxygen on Linux
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen
+
+      ## Just to see the output
+      - name: Verify Doxygen installation
+        run: doxygen --version
+        
+      ## Replace back slashes to Linux forward slashes in paths in Doxyfile 
+      - name: Replace back slashes
+        run: |
+          #python replace-backslashes.py ${{ github.event.inputs.file_to_process }}
+          python replace-backslashes.py ${{ env.file_to_process }}
+        env:
+          file_to_process: Doxyfile
+        working-directory: devops/docs
+
+      ## Generate the docs from our code comments
+      ## .. devops\docs\Doxyfile is the doxygen config file (use "/" in Linux paths)
+      - name: Run Doxygen
+        run: doxygen devops/docs/Doxyfile
+        
+      ## Upload generated documentation by Doxygen to GitHub
+      - name: Upload Docs
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: Documentation/html
+
+      ## Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      ## Publish our docs prepared by upload-pages-artifact to GitHub Pages
+      - name: Deploy To GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
