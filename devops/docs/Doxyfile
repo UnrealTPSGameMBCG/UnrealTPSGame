@@ -1130,8 +1130,8 @@ IMAGE_PATH             =
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by doxygen.
 
-# "py" is needed for running on Linux 
-INPUT_FILTER           = py devops\docs\ue_doxygen_source_filter\filter_ue4_macros.py
+# calling "python" is requried for running on Linux 
+INPUT_FILTER           = python devops\docs\ue_doxygen_source_filter\filter_ue4_macros.py
 
 # The FILTER_PATTERNS tag can be used to specify filters on a per file pattern
 # basis. Doxygen will compare the file name with each pattern and apply the
