@@ -57,6 +57,7 @@ popd
 :: ========== FUNCTIONS ==========
 goto:EOF
 
+rem returning the full paths 
 :NORMALIZEPATH
   SET RETVAL=%~f1
   EXIT /B
