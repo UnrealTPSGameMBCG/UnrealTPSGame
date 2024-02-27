@@ -3,14 +3,12 @@ name: My Game Documentation
 on:
   push:
     branches: 
-    #- master
-    #- doxyg-workflow
-    - not-existing-branch
+    - master
+    #- not-existing-branch
   pull_request:
     branches: 
-    #- master
-    #- doxyg-workflow
-    - not-existing-branch
+    - master
+    #- not-existing-branch
 
 ## This is for deploy-pages
 permissions:
