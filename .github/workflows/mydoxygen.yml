@@ -3,8 +3,8 @@ name: My Game Documentation
 on:
   push:
     branches: 
-    #- master
-    - not-existing-branch
+    - master
+    #- not-existing-branch
   pull_request:
     branches: 
     #- master
