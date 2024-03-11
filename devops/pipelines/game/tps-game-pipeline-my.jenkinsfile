@@ -26,10 +26,10 @@ pipeline {
                     webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
 
                 checkout scmGit(
-                    branches: [[name: "$GIT_BRANCH"]], 
+                    branches: [[name: "$GIT_BRANCH_GAME"]], 
                     extensions: [cleanBeforeCheckout(), cloneOption(depth: 1, noTags: false, reference: '', shallow: true), checkoutOption(10)], 
-                    userRemoteConfigs: [[credentialsId: "$GIT_CREDENTIALS_ID", 
-                    url: "$GIT_URL"]]
+                    userRemoteConfigs: [[credentialsId: "$GIT_CREDENTIALS_ID_GAME", 
+                    url: "$GIT_URL_GAME"]]
                 )
             }    
         }
