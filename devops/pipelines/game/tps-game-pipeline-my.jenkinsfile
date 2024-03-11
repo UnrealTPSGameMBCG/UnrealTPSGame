@@ -6,11 +6,6 @@ pipeline {
         }
     }
 
-    parameters {
-        choice name: 'CLIENT_CONFIG', choices: ['Development', 'Shipping', 'DebugGame'], description: 'Build configuration' 
-        string name: 'GIT_BRANCH', defaultValue: 'master', description: 'git branch to clone' 
-    }
-
     stages {
         stage('Git clone') {
             steps {
