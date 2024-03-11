@@ -1,0 +1,118 @@
+pipeline {
+    agent {
+        node {
+            label ""
+            customWorkspace "$BUILD_DIR"
+        }
+    }
+
+    parameters {
+        choice name: 'CLIENT_CONFIG', choices: ['Development', 'Shipping', 'DebugGame'], description: 'Build configuration' 
+        string name: 'GIT_BRANCH', defaultValue: 'master', description: 'git branch to clone' 
+    }
+
+    /*
+    // COP: we moved Environment variables to Jenkins UI using Environment Injector plugin
+    environment {
+        GIT_URL = 'https://github.com/UnrealTPSGameMBCG/UnrealTPSGame'
+        GIT_CREDENTIALS_ID = 'MichaelBCG-github'
+        // moved to "Parameters"
+        // GIT_BRANCH = 'master'
+        UAT_PATH = 'C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/RunUAT.bat'
+        PROJECT_PATH = "$BUILD_DIR/TPS.uproject"
+        PLATFORM = 'Win64'
+        // moved to "Parameters":
+        // CLIENT_CONFIG = 'Development'
+        // just for clarity:
+        // ARCHIVE_PATH = "c:/JenkinsJobs/Artifacts/$JOB_NAME/$BUILD_NUMBER"
+        ARCHIVE_PATH = "$BUILD_DIR/Build"
+        BUILD_FLAGS = '-build -cook -package -stage -archive -pak -allmaps -noturnkeyvariables'
+        DIR_TO_ZIP = "Build/**/*.*"
+    }
+    */
+
+    stages {
+        stage('Git clone') {
+            steps {
+                discordSend description: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER} started",  
+                    enableArtifactsList: false, 
+                    footer: '', 
+                    image: '', 
+                    link: env.BUILD_URL, 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER}", 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+
+                checkout scmGit(
+                    branches: [[name: "$GIT_BRANCH"]], 
+                    extensions: [cleanBeforeCheckout(), cloneOption(depth: 1, noTags: false, reference: '', shallow: true), checkoutOption(10)], 
+                    userRemoteConfigs: [[credentialsId: "$GIT_CREDENTIALS_ID", 
+                    url: "$GIT_URL"]]
+                )
+            }    
+        }
+        stage('Build') {
+            steps {
+                bat '''
+                "%UAT_PATH%" BuildCookRun ^
+                -project="%PROJECT_PATH%" ^
+                -platform="%PLATFORM%" ^
+                -clientconfig="%CLIENT_CONFIG%" ^
+                -archivedirectory="%ARCHIVE_PATH%" ^
+                %BUILD_FLAGS%
+                '''
+            }    
+        }
+        stage('Archive artifacts') {
+            steps {
+                archiveArtifacts artifacts: "$DIR_TO_ZIP"
+            }    
+        } 
+    }
+    post {
+        always {
+                discordSend description: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER} finished: $currentBuild.currentResult. Artifacts: ",  
+                    enableArtifactsList: true, 
+                    footer: '', 
+                    image: '', 
+                    link: "${env.BUILD_URL}/artifact/", 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER}", 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+        }
+    }
+}
+
+
+
+/*
+// working:
+                discordSend description: "Jenkins Pipeline Build", 
+                    footer: '', 
+                    link: env.BUILD_URL, 
+                    result: currentBuild.currentResult, 
+                    title: JOB_NAME,
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+
+
+*/
+/*
+// working 
+
+                discordSend description: 'Jenkins Pipeline Build', 
+                    enableArtifactsList: false, 
+                    footer: '', 
+                    image: '', 
+                    link: env.BUILD_URL, 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: JOB_NAME, 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+*/
+
+
