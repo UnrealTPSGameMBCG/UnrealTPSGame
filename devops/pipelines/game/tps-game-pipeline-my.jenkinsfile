@@ -13,22 +13,22 @@ pipeline {
 
     /*
     // COP: we moved Environment variables to Jenkins UI using Environment Injector plugin
-    environment {
-        GIT_URL = 'https://github.com/UnrealTPSGameMBCG/UnrealTPSGame'
-        GIT_CREDENTIALS_ID = 'MichaelBCG-github'
-        // moved to "Parameters"
-        // GIT_BRANCH = 'master'
-        UAT_PATH = 'C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/RunUAT.bat'
-        PROJECT_PATH = "$BUILD_DIR/TPS.uproject"
-        PLATFORM = 'Win64'
-        // moved to "Parameters":
-        // CLIENT_CONFIG = 'Development'
-        // just for clarity:
-        // ARCHIVE_PATH = "c:/JenkinsJobs/Artifacts/$JOB_NAME/$BUILD_NUMBER"
-        ARCHIVE_PATH = "$BUILD_DIR/Build"
-        BUILD_FLAGS = '-build -cook -package -stage -archive -pak -allmaps -noturnkeyvariables'
-        DIR_TO_ZIP = "Build/**/*.*"
-    }
+    //environment {
+    //    GIT_URL = 'https://github.com/UnrealTPSGameMBCG/UnrealTPSGame'
+    //    GIT_CREDENTIALS_ID = 'MichaelBCG-github'
+    //    // moved to "Parameters"
+    //    // GIT_BRANCH = 'master'
+    //    UAT_PATH = 'C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/RunUAT.bat'
+    //    PROJECT_PATH = "$BUILD_DIR/TPS.uproject"
+    //    PLATFORM = 'Win64'
+    //    // moved to "Parameters":
+    //    // CLIENT_CONFIG = 'Development'
+    //    // just for clarity:
+    //    // ARCHIVE_PATH = "c:/JenkinsJobs/Artifacts/$JOB_NAME/$BUILD_NUMBER"
+    //    ARCHIVE_PATH = "$BUILD_DIR/Build"
+    //    BUILD_FLAGS = '-build -cook -package -stage -archive -pak -allmaps -noturnkeyvariables'
+    //    DIR_TO_ZIP = "Build/**/*.*"
+    //}
     */
 
     stages {
