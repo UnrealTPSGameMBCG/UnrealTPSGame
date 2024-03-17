@@ -32,7 +32,12 @@ def main():
     if os.path.exists(args.ue_report_path):
         json_file = open(args.ue_report_path, encoding="utf-8-sig")
         json_obj = json.loads(json_file.read())
-        print(json_obj)
+        # mike: COP: it gives error: UnicodeEncodeError: 'charmap' codec can't encode
+        # print(json_obj)
+        # instead of "print(json_obj)":
+        ## json_str = json.dumps(json_obj, ensure_ascii=False)
+        ## sys.stdout.buffer.write(json_str.encode('utf-8')) # requires "import sys"
+        # alternatively, you can comment out output at all, it's not really needed
     else:
         print("Error: The specified JSON file does not exist.")
         json_file_open_successful = False
