@@ -1,0 +1,122 @@
+// new
+
+pipeline {
+    agent {
+        node {
+            label "UE-test-runner-label"
+            customWorkspace "$BUILD_DIR"
+        }
+    }
+    
+    environment {
+        UNOPTIMIZED_BUILD_FIX_LINE_BEFORE = 'public bool UnoptimizedCode = false;'
+        UNOPTIMIZED_BUILD_FIX_LINE_AFTER = 'public bool UnoptimizedCode = true;'
+        EDITOR_TARGET_FILE = "${SOURCE_CODE_PATH}\\${PROJECT_PURE_NAME}Editor.Target.cs"
+        USE_UNOPTIMIZED_BUILD = 'true'
+    }
+
+    stages {
+        stage('Git clone') {
+            steps {
+                discordSend description: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER} started",  
+                    enableArtifactsList: false, 
+                    footer: '', 
+                    image: '', 
+                    link: env.BUILD_URL, 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER}", 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+
+                checkout scmGit(
+                    branches: [[name: "$GIT_BRANCH_GAME"]], 
+                    //extensions: [cleanBeforeCheckout(), cloneOption(depth: 1, noTags: false, reference: '', shallow: true), checkoutOption(10)], 
+                    userRemoteConfigs: [[credentialsId: "$GIT_CREDENTIALS_ID_GAME", 
+                    url: "$GIT_URL_GAME"]]
+                )
+            }    
+        }
+        stage('Set unoptimized build') {
+            when {
+                environment name: 'USE_UNOPTIMIZED_BUILD', value: 'true'
+            }
+            steps {
+                bat '''
+                powershell -Command "(gc '%EDITOR_TARGET_FILE%') -replace '%UNOPTIMIZED_BUILD_FIX_LINE_BEFORE%', '%UNOPTIMIZED_BUILD_FIX_LINE_AFTER%' | Out-File  %EDITOR_TARGET_FILE%"
+                '''
+            }    
+        }
+        stage('Build') {
+            steps {
+                bat '''
+                "%UAT_PATH%" BuildCookRun ^
+                -project="%PROJECT_PATH%" ^
+                -platform="%PLATFORM%" ^
+                -clientconfig="%CLIENT_CONFIG%" ^
+                %BUILD_FLAGS%
+                '''
+            }    
+        }
+        stage('Testing UE Game') {
+            steps {
+                bat '''
+                del /Q \"%TEST_REPORT_OUTPUT_PATH%\\*\"
+                
+                set TestRunner="%EDITOR_PATH%" "%PROJECT_PATH%" -nosplash -ExecCmds="Automation %TEST_EXTRA_COMMAND%RunTests %TEST_NAMES%;Quit" ^
+                -ReportOutputPath="%TEST_REPORT_OUTPUT_PATH%"
+
+                "%OPEN_CPP_COVERAGE_PATH%" --modules="%BUILD_DIR%" --sources="%SOURCE_CODE_PATH%" ^
+                --excluded_sources="%EXCLUDED_SOURCES%" --export_type="%CODE_COVERAGE_EXPORT_TYPE%" -- %TestRunner%
+                
+                if errorlevel 255 echo WARNING: Some tests failed, error code: %errorlevel% & exit /b 0
+                '''
+            }    
+        } 
+        stage('Unset unoptimized build') {
+            when {
+                environment name: 'USE_UNOPTIMIZED_BUILD', value: 'true'
+            }
+            steps {
+                bat '''
+                powershell -Command "(gc %EDITOR_TARGET_FILE%) -replace '%UNOPTIMIZED_BUILD_FIX_LINE_AFTER%', '%UNOPTIMIZED_BUILD_FIX_LINE_BEFORE%' | Out-File  %EDITOR_TARGET_FILE%"
+                '''
+            }    
+        }
+        stage('Publishing test results') {
+            environment {
+                UE_TO_JUNIT_CONVERTER_PATH = "$BUILD_DIR\\devops\\tests\\ue_report_to_junit.py"
+                UE_TESTS_PATH = "$BUILD_DIR\\Build\\Tests\\index.json"
+                JUNIT_TESTS_PATH = "$BUILD_DIR\\Build\\Tests\\index.xml"
+                COBERTURA_PATCHER = "$BUILD_DIR\\devops\\tests\\cobertura_report_patcher.py"
+                COBERTURA_REPORT_COVERAGE_PATH = "$BUILD_DIR\\Build\\Tests\\CodeCoverageReport.xml"
+            }
+
+            steps {
+                bat '''
+                python "%UE_TO_JUNIT_CONVERTER_PATH%" -ue_report_path="%UE_TESTS_PATH%" -junit_xml_path="%JUNIT_TESTS_PATH%"
+                '''
+                bat '''
+                python "%COBERTURA_PATCHER%" -cobertura_report_path="%COBERTURA_REPORT_COVERAGE_PATH%"                
+                '''
+
+                junit stdioRetention: '', testResults: 'Build\\Tests\\index.xml'
+                cobertura coberturaReportFile: 'Build\\Tests\\CodeCoverageReport.xml', onlyStable: false
+            }    
+        } 
+    }
+    post {
+        always {
+                discordSend description: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER} finished: $currentBuild.currentResult. Artifacts: ",  
+                    enableArtifactsList: true, 
+                    footer: '', 
+                    image: '', 
+                    link: "${env.BUILD_URL}/artifact/", 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER}", 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+        }
+    }
+}
