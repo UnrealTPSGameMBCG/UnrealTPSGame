@@ -1,0 +1,81 @@
+pipeline {
+    agent {
+        node {
+            label ""
+            customWorkspace "$BUILD_DIR"
+        }
+    }
+
+    /*        
+    environment {
+        GIT_URL_GAME = https://github.com/UnrealTPSGameMBCG/UnrealTPSGame
+        GIT_CREDENTIALS_ID_GAME = MichaelBCG-github
+        GIT_BRANCH_GAME = master
+
+        DOXYFILE_PATH = $BUILD_DIR\\devops\\docs\\Doxyfile
+        DOCS_DIR = Documentation\html
+    }
+    */
+
+    stages {
+        stage('Git clone') {
+            steps {
+                discordSend description: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER} started",  
+                    enableArtifactsList: false, 
+                    footer: '', 
+                    image: '', 
+                    link: env.BUILD_URL, 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER}", 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+
+                    checkout scmGit(
+                        branches: [[name: "$GIT_BRANCH_GAME"]], 
+                        extensions: [
+                            cleanBeforeCheckout(), cloneOption(depth: 1, noTags: false, reference: '', shallow: true), checkoutOption(120),
+                            submodule(depth: 1, recursiveSubmodules: true, reference: '', shallow: true)], 
+                        userRemoteConfigs: [[credentialsId: "$GIT_CREDENTIALS_ID_GAME", 
+                        url: "$GIT_URL_GAME"]]
+                )
+            }    
+        }
+        stage('Generate documentation') {
+            steps {
+                bat '''
+                    rmdir /s /q "$BUILD_DIR\\Documentation"
+                    doxygen %DOXYFILE_PATH%
+                '''
+            }    
+        }
+        stage('Publishing documentation') {
+            steps {
+                publishHTML([
+                    allowMissing: false, 
+                    alwaysLinkToLastBuild: false, 
+                    keepAll: false, 
+                    reportDir: "$DOCS_DIR", 
+                    reportFiles: 'index.html', 
+                    reportName: 'HTML Code documentation', 
+                    reportTitles: '', 
+                    useWrapperFileDirectly: true
+                ])
+            }    
+        } 
+    }
+    post {
+        always {
+                discordSend description: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER} finished: $currentBuild.currentResult. Artifacts: ",  
+                    enableArtifactsList: true, 
+                    footer: '', 
+                    image: '', 
+                    link: "${env.BUILD_URL}/artifact/", 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER}", 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+        }
+    }
+}
