@@ -6,6 +6,19 @@ pipeline {
         }
     }
 
+    /* environment {
+        GIT_URL_GAME = https://github.com/UnrealTPSGameMBCG/UnrealTPSGame
+        GIT_CREDENTIALS_ID_GAME = MichaelBCG-github
+        GIT_BRANCH_GAME = master
+        UAT_PATH = c:\\UE\\UE_LatestReleaseSrc\\Engine\\Build\\BatchFiles\\RunUAT.bat
+        PROJECT_PATH = $BUILD_DIR/TPS.uproject
+        PLATFORM = Win64
+        // CONFIG = Development // moved to as a choice param (for using in Multijob)
+        ARCHIVE_PATH = $BUILD_DIR/Build
+        BUILD_FLAGS = -build -cook -package -stage -archive -pak -allmaps -noturnkeyvariables -client
+        DIR_TO_ZIP = Build/**/*.*
+    }*/
+
     stages {
         stage('Git clone') {
             steps {
