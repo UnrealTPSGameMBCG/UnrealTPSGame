@@ -1,0 +1,64 @@
+pipeline {
+    agent {
+        node {
+            label ""
+            customWorkspace "$BUILD_DIR"
+        }
+    }
+
+    stages {
+        stage('Git clone') {
+            steps {
+                discordSend description: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER} started",  
+                    enableArtifactsList: false, 
+                    footer: '', 
+                    image: '', 
+                    link: env.BUILD_URL, 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER}", 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+
+                checkout scmGit(
+                    branches: [[name: "$GIT_BRANCH_GAME"]], 
+                    extensions: [cleanBeforeCheckout(), cloneOption(depth: 1, noTags: false, reference: '', shallow: true), checkoutOption(10)], 
+                    userRemoteConfigs: [[credentialsId: "$GIT_CREDENTIALS_ID_GAME", 
+                    url: "$GIT_URL_GAME"]]
+                )
+            }    
+        }
+        stage('Build') {
+            steps {
+                bat '''
+                "%UAT_PATH%" BuildCookRun ^
+                -project="%PROJECT_PATH%" ^
+                -platform="%PLATFORM%" ^
+                -clientconfig="%CONFIG%" ^
+                -serverconfig="%CONFIG%" ^
+                -archivedirectory="%ARCHIVE_PATH%" ^
+                %BUILD_FLAGS%
+                '''
+            }    
+        }
+        stage('Archive artifacts') {
+            steps {
+                archiveArtifacts artifacts: "$DIR_TO_ZIP"
+            }    
+        } 
+    }
+    post {
+        always {
+                discordSend description: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER} finished: $currentBuild.currentResult. Artifacts: ",  
+                    enableArtifactsList: true, 
+                    footer: '', 
+                    image: '', 
+                    link: "${env.BUILD_URL}/artifact/", 
+                    result: currentBuild.currentResult, 
+                    scmWebUrl: '', 
+                    thumbnail: '', 
+                    title: "Build ${env.JOB_NAME} #${env.BUILD_NUMBER}", 
+                    webhookURL: 'https://discord.com/api/webhooks/1216203845550477332/i8zcv30vhaA_k67LyZlXlpZ4wByeSN2jyBmVe1FPX2kE44cRO-ctu_gYW_b6FbFUXfII'
+        }
+    }
+}
