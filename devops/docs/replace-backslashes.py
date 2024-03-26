@@ -1,4 +1,7 @@
 # This script is designed to replace backslashes ("\") to forward slashes ("/") in file pathes in a Doxygen config file (Doxyfile)
+# Back slashes are used in Windows paths. Forward slashes are used in Linux paths. 
+# Use this script if you run Doxygen on Linux
+
 # Usage: python replace-backslashes.py <file_to_process>
 # Example of usage: 
 # python replace_backslashes.py Doxyfile
