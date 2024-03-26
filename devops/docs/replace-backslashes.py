@@ -1,7 +1,16 @@
-# This script replaces backslashes ("\") to forward slashes ("/") in file pathes in a Doxygen config file (Doxyfile)
-# The script uses a parameter as a path to file
-# Example of use: 
+# This script is designed to replace backslashes ("\") to forward slashes ("/") in file pathes in a Doxygen config file (Doxyfile)
+# Usage: python replace-backslashes.py <file_to_process>
+# Example of usage: 
 # python replace_backslashes.py Doxyfile
+
+## Example of usage in GitHub Workflow:
+## replace-backslashes.py and Doxyfile are assumed to be in devops/docs
+#      - name: Replace back slashes
+#        run: |
+#          python replace-backslashes.py ${{ env.file_to_process }}
+#        env:
+#          file_to_process: Doxyfile
+#        working-directory: devops/docs
 
 import sys
 import os
@@ -27,7 +36,7 @@ def process_file(file_path):
 
 if __name__ == "__main__": 
     if len(sys.argv) != 2: 
-        print("Usage: python replace-backslashes.py <file_to_process>")
+        print("Expected usage: python replace-backslashes.py <file_to_process>")
         sys.exit(1)
 
     file_path = sys.argv[1]
